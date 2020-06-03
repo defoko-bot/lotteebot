@@ -15,7 +15,6 @@ client.on("ready", () => {
 
 client.on("message", (msg) => {
     if(msg.author.bot || msg.mentions.members.first()) return;
-    if(msg.content === `listacarai`) return msg.channel.send(JSON.parse(JSON.stringify(file)));
     switch(msg.channel.id){
         case '716808248271044661':
         lemsgs.push(msg.content);
