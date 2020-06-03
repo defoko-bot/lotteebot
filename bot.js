@@ -20,7 +20,8 @@ client.on("message", (msg) => {
         case '716808248271044661':
         lemsgs.push(msg.content);
         const logger = fs.createWriteStream("./msg.json")
-        logger.write(JSON.stringify(file))            
+        logger.write(JSON.stringify(file))
+        console.log(`Mensagem ${msg} adicionada`)
         break;
         case '717734564126130218':
         const randommsg = lemsgs[Math.floor(Math.random()*lemsgs.length)];
