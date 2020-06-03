@@ -14,7 +14,7 @@ client.on("ready", () => {
 });
 
 client.on("message", (msg) => {
-    if(msg.author.bot || msg.mentions.members.first()) return;
+    if(msg.author.bot || msg.mentions.members.first() || msg.content.includes(`<@everyone>`)) return;
     switch(msg.channel.id){
         case '716808248271044661':
         lemsgs.push(msg.content);
