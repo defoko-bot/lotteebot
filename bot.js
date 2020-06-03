@@ -24,6 +24,7 @@ client.on("message", (msg) => {
         const randommsg = lemsgs[Math.floor(Math.random()*lemsgs.length)];
         msg.channel.send(randommsg)
         console.log(`Mensagem ${randommsg} enviada`)
+        break;
     }
 });
 
